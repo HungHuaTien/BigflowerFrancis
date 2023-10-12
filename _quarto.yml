@@ -1,0 +1,41 @@
+project:
+  type: website
+
+website:
+  title: "BigflowerFrancis"
+  navbar:
+    left:
+      - href: topic.qmd
+        text: 主題探索
+      - href: method.qmd
+        text: 方法工具
+      - href: life.qmd
+        text: 生活實踐
+      - href: about.qmd
+        text: 關於我
+
+format:
+  html:
+    code-block-border-left: true
+    code-block-bg: true
+    code-line-numbers: true
+    code-copy: true
+    theme: flatly
+    highlight: pygments
+    html-math-method: katex
+    df-print: paged
+    css: styles.css
+    toc: true
+
+execute:
+  echo: true
+  eval: true
+  includes: true
+  warning: false
+  message: false
+  error: false
+
+knitr:
+  opts_chunk: 
+    results: hold
+
